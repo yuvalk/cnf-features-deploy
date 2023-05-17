@@ -260,6 +260,7 @@ func (cluster *Clusters) BiosFileSearch(site *Spec) string {
 type DiskEncryption struct {
 	Type string       `yaml:"type"`
 	Tang []TangConfig `yaml:"tang"`
+	Tpm2 Tpm2Config   `yaml:"tmp2"`
 }
 
 // Provide custom YAML unmarshal for DiskEncryption which provides default values

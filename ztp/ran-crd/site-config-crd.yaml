@@ -252,6 +252,16 @@ spec:
                             enum:
                               - none
                               - nbde
+                              - tpm2
+                          tpm2:
+                            description: tmp2 args
+                            type: object
+                            properties:
+                              pcr_ids:
+                                description: list of pcrs to bind the disk encryption with
+                                type: array
+                                items:
+                                  type: integer
                           tang:
                             description: NBDE Tang server descriptions
                             type: array
